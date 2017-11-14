@@ -12,12 +12,13 @@
                 <li>What is Machine Learning</li>
                 <li>Supervised Learning</li>
                 <li>Unsupervised Learning</li>
+                <li>Model Representation and Cost Function </li>
                 <li>Gradient Descent</li>
                 <li>Linear Algebra in Machine Learning</li>
      
               </ul>
      </p>
-     <h2> What is Machine Learning</h2> 
+     <h3> What is Machine Learning</h3> 
 
       <p> There were two definitions given for Machine Learning, I like the one of Tom Mitchells: 
       "A computer program is said to learn from experience E with respect to some class of tasks T
@@ -37,8 +38,29 @@
       Price as a function of size is a continuous output, so this is a regression problem.<br>
       Classification, on the other hand, is classifiying the output into some options. For ecample, sells for
       more or less than the asking experience.<br>
-      <h4>Unsupervised Learning</h4>
-      <p></p>
+      <h3>Unsupervised Learning</h3>
+      <p>In UL we get know idea how the output will be. So we have to predict the result by clustering the data 
+      based on relationships among the variables in the data.<br>
+      Clustering (i.e. grouping genes)and Non-clustering (i.e. finding structure in chaotic environment) are two
+      types of UL.</p>
+      <h3>Model Representaion and Cost Function </h3>
+      <p><b>Model representation</b> is the way to represent a problem and it's solution.
+      Our first model representation algorithm or learning algorithm is Linear Regression to predict results for 
+      supervised learning algorithms.
+      Here we use <i>x<sup>(i)</sup></i> as input variable (also called input feature) and <i>y<sup>(i)</sup></i>
+      as the predicted output.</p> 
+      <p>A pair of <i>(x<sup>(i)</sup>,<i>y<sup>(i)</sup>)</i> is called a training example. And the data set we
+         use for learning , a list of m traing examples i.e <i> i = 1,2,.....,m</i> is called a training set. 
+         We learn  the hypothesis function <i>h(x) where h = X->Y</i> to predict a corresponding result. 
+         When the value of <i>y </i> is continuous it's regression problem and when <i>y</i> is discrete then it
+         is classification problem.<br>
+        <b>Cost Function</b> is to measure the accuracy of our hypothesis.\
+
+        J(θ0,θ1)=12m∑i=1my^i−yi2=12m∑i=1mhθ(xi)−yi2;
+         <br>
+         <br>
+      </p>
+
   </body>
  </html>
 
