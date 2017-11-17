@@ -56,13 +56,33 @@
          is classification problem.<br>
         <b>Cost Function</b> is to measure the accuracy of our hypothesis.
         <br>
-        <i> J(θ<sub>0</sub>,θ<sub>1</sub>) = 1/2m ∑(i=1,m) (h<sub>θ</sub>(x<sup>i</sup>)−y<sup>i</
+        <i> J(θ₀,θ₁) = 1/2m ∑ (h<sub>θ</sub>(x<sup>i</sup>)−y<sup>i</
                 sup>)²</i>;
+            Our task is to find out the minimum value of the cost function. The best value for
+            cost function is 0.
          <br>
          <br>
       </p>
       <h3> Gradient Descent </h3>
-      <p>After learning the hypothesis and cost function we need to learn the</p>
+      <p>After learning the hypothesis and cost function we need to learn the Gradient Descent. Which is used to minimize the cost function.
+      <br> When we put the parameters θ₀,θ₁ and the cost function in a 3D graph , cost function is best at the ground. To minimize the cost function we take the derivative of the cost function.
+      Which is done by some steps , α , which is called the learning rate. We repeat the gradient descent algorithm until the value of the cost function is the least. 
+      <br>
+      Gradient Descent algorithm:
+      <br>
+      <br>
+      <i>
+          repeat untill convergence
+
+          θj := θj - α*derivation of cost function J(θ);
+
+          where j = 0,1
+      </i>
+
+        if α is too high then gardient descent will be high and if α is too low the gradient 
+        descent will be low. 
+      <br>
+      </p>
   </body>
  </html>
 
