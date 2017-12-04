@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Week 5
+         </title>
+    </head>
+    <body>
+        <h1> Cost function and Back Propagation </h1>
+        <p>To calculate the cost function of neural network the function is summed up for two times. 
+        The variables used in this cost function are 
+        <br>L = number of layers<br>
+        S<sub>l</sub> = number of units in layer l
+        <br>K = number of output units
+        
+         Like gradient descent used in linear or logistic regression to minimize cost function, for neural
+        network cost funciton minimization we will use back propagation. The back propagation algorithm steps 
+        are following :
+        <br> For some training set (x<sup>m</sup>,y<sup>m</sup>)
+        <br> set Δ<sub>(i,j)</sub><sup>l</sup> = 0 for all (l,i,j)
+        <br> for t = 1
+        <br>1. a(1) = x(t)
+        <br>2. perform forward propagation on a<sup>l</sup> for l = 2,3,.....,L
+        <br>3. for every y<sup>t</sup> calculate δ<sup>L</sup> = a<sup>L</sup> - y<sup>t</sup>
+        <br>a<sup>L</sup> is the vector for all outputs for the activation units in last layer L
+        <br>4.  <p style = "color: red">COMPLETE ALGORITHM</p>
+        </p>

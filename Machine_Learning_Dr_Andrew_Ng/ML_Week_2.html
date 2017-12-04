@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>
+            Machine Learning by Dr. Andrew Ng : Week 2
+        </title>
+    </head>
+    <body>
+        <h1> Week 2 </h1>
+        <p>In our last week we have learned about some very basics of machine learning. Week 2
+        is about <br>
+        <ol>
+            <li>How to set up enviroment</li>
+            <li>Linear Regression with Multiple Variables </li>
+        </ol>
+
+        <h3>How to Set up enviroment</h3>
+        <p>In this part the video slides are about<br>
+        <ol>
+            <li> How to install and setup Octave an Matlab </li>
+            <li> Some basic tutorials on Octave and Matlan </li>
+            <li> How to submit assignments </li>
+        </ol>
+    From week 2 we have to submit programming assignments as well.
+
+        <h3> Linear Regression with Multiple Variables </h3>
+        <p>In our last week we learnt Linear Regression with single variable. This week we get to
+        learn linear Regression with multiple varibles.</p>
+        <p>This is also called 'multivariate linear regression'. In this case the hypothesis will
+        be like <br>
+        <p style = "text-align: center;"><i> h(θ) = θ₀ + θ₁x₁ + θ₂x₂ + ..... + θ<sub>n</sub>x<sub>n</sub>
+        </i>
+        </p>
+        <p>For multivariate linear regression we have to calculate gradient descent for n times. </p>
+        
+        <p> To speed up gradient descent we have to make sure the input values are in a same range. and the 
+        range should be small such as <i>-1≤x<sub>i</sub>≤1</i> or <i>-0.5≤x<sub>i</sub>≤0.5</i>. To do this
+        we use <b>Feature Scalling</b> and <b>Mean Normalization</b>.
+        
+        <h4>Feature Scalling and Mean Normalization</h4>
+        <b>Feature Scalling</b> is <i>input_values/range_of_input_values</i> and <b> Mean Normalization </b> is 
+        <i>subtracting average value of input variable from the input variable</i>. To measure feature scalling 
+        and mean normalization the equation is following:
+        <p style= "text-align: center;">   <i> x<sub>i</sub> :=
+            (x<sub>i</sub>-μ<sub>i</sub>)/s<sub>i</sub></i></p>
+        where, μ<sub>i</sub> = average value of the input.
+        x<sub>i</sub> = input
+        s<sub>i</sub> = rage of inputs(standard deviation).
+        </p>
+        <h4>Learning Rate(α)</h4>
+        <p><b>Learning Rate</b> is the step size of calcultaing the cost function. If α is too low then the 
+        convergence will be slow. And if it is too high then J(Θ) will not decrease and so the ocnvergence will
+        not happen.
+        </p>
+
+        <h4>Features and polynomial regression</h4>
+        <p>The hypothesis function may not be linear all time. We can control the curve of the line by adding 
+        more features or by creating more features by making the function quadratic/cubic/square root function.
+        </p>
+
+
+
+        </p>
+        </body>
+</html>
+

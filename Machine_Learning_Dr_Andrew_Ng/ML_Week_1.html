@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>
+            Machine_Learning
+        </title>
+    </head>
+   
+  <body>
+      <h1 style = "font-size:300%"><b>Week 1</b></h1>
+     <p>In week one I have learnt about:
+            <ul>
+                <li>What is Machine Learning</li>
+                <li>Supervised Learning</li>
+                <li>Unsupervised Learning</li>
+                <li>Model Representation and Cost Function </li>
+                <li>Gradient Descent</li>
+                <li>Linear Algebra in Machine Learning</li>
+     
+              </ul>
+     </p>
+     <h3> What is Machine Learning</h3> 
+
+      <p> There were two definitions given for Machine Learning, I like the one of Tom Mitchells: 
+      "A computer program is said to learn from experience E with respect to some class of tasks T
+      and performance measure P, if its performance at tasks in T, as measured by P, improves with
+      experience E."
+      <br>
+      Example: playing checkers. <br>
+      E = the experience of playing many games of checkers <br>
+      T = the task of playing checkers. <br>
+      P = the probability that the program will win the next game. </p>
+
+      <h3>Supervised Learning</h3>
+      <p> In Supervised Learning we know the output , so all we have to do is to make a relationship between the        output and the given dataset.
+      There are two types of SL. Regression an classification.<br>
+      Regression is where we have continuous outputs an we have to predict the result form this. For example,
+      Given data about the size of houses on the real estate market, try to predict their price.
+      Price as a function of size is a continuous output, so this is a regression problem.<br>
+      Classification, on the other hand, is classifiying the output into some options. For ecample, sells for
+      more or less than the asking experience.<br>
+      <h3>Unsupervised Learning</h3>
+      <p>In UL we get know idea how the output will be. So we have to predict the result by clustering the data 
+      based on relationships among the variables in the data.<br>
+      Clustering (i.e. grouping genes)and Non-clustering (i.e. finding structure in chaotic environment) are two
+      types of UL.</p>
+      <h3>Model Representaion and Cost Function </h3>
+      <p><b>Model representation</b> is the way to represent a problem and it's solution.
+      Our first model representation algorithm or learning algorithm is Linear Regression to predict results for 
+      supervised learning algorithms.
+      Here we use <i>x<sup>(i)</sup></i> as input variable (also called input feature) and <i>y<sup>(i)</sup></i>
+      as the predicted output.</p> 
+      <p>A pair of <i>(x<sup>(i)</sup>,y<sup>(i)</sup>)</i> is called a training example. And the data set we
+         use for learning , a list of m traing examples i.e <i> i = 1,2,.....,m</i> is called a training set. 
+         We learn  the hypothesis function <i>h(x) where h = X->Y</i> to predict a corresponding result. 
+         When the value of <i>y </i> is continuous it's regression problem and when <i>y</i> is discrete then it
+         is classification problem.<br>
+        <b>Cost Function</b> is to measure the accuracy of our hypothesis.
+        <br>
+        <i> J(θ₀,θ₁) = 1/2m ∑ (h<sub>θ</sub>(x<sup>i</sup>)−y<sup>i</
+                sup>)²</i>;
+            Our task is to find out the minimum value of the cost function. The best value for
+            cost function is 0.
+            (θ₀ can be assumed as basic price, θ₁ as the price per square meter, x¹ as number of
+            square meter)
+         <br>
+         <br>
+      </p>
+      <h3> Gradient Descent </h3>
+      <p>After learning the hypothesis and cost function we need to learn the Gradient Descent. Which is used to minimize the cost function.
+      <br> When we put the parameters θ₀,θ₁ and the cost function in a 3D graph , cost function is best at the ground. To minimize the cost function we take the derivative of the cost function.
+      Which is done by some steps , α , which is called the learning rate. We repeat the gradient descent algorithm until the value of the cost function is the least. 
+      <br>
+      Gradient Descent algorithm:
+      <br>
+      <br>
+      <i>
+          repeat untill convergence
+
+          θj := θj - α*derivation of cost function J(θ);
+
+          where j = 0,1
+      </i>
+
+        if α is too high then gardient descent will be high and if α is too low the gradient 
+        descent will be low. 
+      <br>
+     </p>
+
+     <h3> Linear Algebra in Machine Learning</h3>
+     <p>In this part of videos I have learnt about how matrices, vectors are used in machine learning.</p>
+     
+         </body>
+ </html>
+

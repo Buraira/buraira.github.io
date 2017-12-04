@@ -1,0 +1,87 @@
+<html>
+
+    <head>
+        <title>
+            Week 3
+        </title>
+    </head>
+
+    <body>
+        <h1>Classification and Representation</h1>
+        <p> As we know from our first week that classification is a kind of supervised learning.
+        For classifier problems inputs are small discrete numbers. For example, spam
+        classification is a classifier problem. For this problem the result y will be 1 is spam 
+        and 0 if not.
+        
+        <br>To represent classification problem we will use linear regression with the 
+        hypothesis <i>h<sub>θ</sub>(x)</i> in range of <i>0≤h<sub>θ</sub>(x)≤1.</i> To find 
+        the hypothesis in the required range we are using a function named <b>'Sigmoid Function'
+            </b>. The sigmoid function is as following.
+         <p style = "text-align:center;"> 
+         z = θ<sup>t</sup>x<br>
+         h<sub>θ</sub>(x) = 1 / 1 + ε<sup>-z</sup>
+         </p>
+
+        The hypothesis is the probability of the result being 1. If hypothesis is .9 then it 90% 
+        probable that the outcome will be 1. <br>
+
+        Hypothesis makes the decision boundary. For example, if h≥0.5 then y=1 and vice versa.    
+        </p>
+
+        <h1>Logistic Regression Model</h1>
+        <p> Cost Function for logistic regression model is different from linear one. The line is not convex
+        curve here. We will use the logarithmic value of h<sub>θ</sub>(x) for y =1  and (1-h<sub>θ</sub>(x) ) 
+        y = 0.
+
+        <br> The final function is <i>
+        <p style = "text-align:center;">Cost(h<sub>θ</sub>(x),y) = 1/m * Σ  (-y*log(h<sub>θ</sub>(x))-
+        ((1-y)*(1-log(h<sub>θ</sub>(x)))))</p>
+       </i>
+
+       The vectorized implementation is <i>
+           Cost(h<sub>θ</sub>(x),y) = 1/m ( -y<sup>T</sup> logh -           
+           ( (1-y)<sup>T</sup> (1-logh))</i>
+        <br>
+        </p>
+
+        The gradient descent is as we know the derivation of the cost function.
+
+        <h1>Multiclass Classification</h1>
+        <p>Till now  we have learnt about binary classificaiton. Multiclass classificaiton is dividing solution
+        to multiple classes. For example, the problem of dividing emails into several folders like family, 
+        business, promotions, etc. Again , how is the weather, Sunny/Snow/Rain is also a multiclass 
+        classification problem.</p>
+        <p>Multiclass Classification problems can be solved using 'one-vs-all' or 'one-vs-rest' method. For this
+        method our predicting classifier will be 
+            <p style = "text-align:center;"><i>h<sub>θ</sub><sup>(i)</sup>(x) = P(y=i|x,θ)   i = 1,2,3....n </i>
+            </p>
+            where, the superscript i indicates the class number. We assume one set of class as positive and the
+            rest as negatives for this method. We fit the classifier to each class to predit if y is equal to
+            positive i given  parameterized by θ. The finally, when we will take a new input x, the classifiers 
+            of all classes will be put on x and the prediction will be the class i which will maximize the 
+            prediciton on x.
+        </p>
+       </p>
+
+       <h1>Solving the overfitting problem</h1>
+       <p>The overfitting problem occurs when the decision boundary line goes through every single point in the
+       graph. This is also called low bias state. We have two more thing , <br>'underfit/high bias' : when the 
+       db line go through a little number of points. <br>'Just right: When the dicision boundary goes through
+       maximum number of points.'
+       <br>
+       <br>
+       When we use greater number of polynomials in our hypothesis the problem of overfitting may occur. 
+       
+       <p> There are some options to minimize overfitting problem.<br>
+       1. Reducing the number of features (manually or using algorithm)<br>
+       2.Regularization - keeping features, reducing the values of the parameters θ<sub>j</sub>. This one works better when 
+       all the features have some affect on y. 
+       
+      </p>
+      <p><b>Regularization</b></p>
+      <p> Using regularization we can reduce the value of the parameter θ. For regularization purpose we 
+        use the regularization parameter , λ. <p style = "color:red">ADD THE EQUATION!!!!!!</p>
+      </p>
+
+    </body>
+
